@@ -37,4 +37,9 @@
 			</fieldset>
 		</fields>
 	</config>
+
+	<updateservers>
+        <server type="extension" priority="1" name="UIkit Icon">https://joomla-ua.org/update/plg/plg_cck_field_uikiticon.xml</server>
+    </updateservers>
+
 </extension>
