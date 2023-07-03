@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="plugin" group="cck_field" version="2.5" method="upgrade">
+<extension type="plugin" group="cck_field" version="3.9" method="upgrade">
 	<name>plg_cck_field_uikiticon</name>
-	<author>Octopoos</author>
-	<authorEmail>contact@seblod.com</authorEmail>
-	<authorUrl>https://www.seblod.com</authorUrl>
-	<copyright>Copyright (C) 2009 - 2018 SEBLOD. All Rights Reserved.</copyright>
-	<license>GNU General Public License version 2 or later.</license>
-	<creationDate>January 2011</creationDate>
-	<description>SEBLOD 3.x - www.seblod.com // by Octopoos - www.octopoos.com</description>
-	<version>4.0.5</version>
+	<author>Denys Nosov (Joomla! Ukraine)</author>
+    <authorEmail>denys@joomla-ua.org</authorEmail>
+    <authorUrl>https://joomla-ua.org</authorUrl>
+    <copyright>Copyright (C) 2017-2022 Joomla! Ukraine. All Rights Reserved.</copyright>
+    <license>GNU General Public License version 2 or later.</license>
+    <creationDate>03.07.2023</creationDate>
+	<description>UIkit Icon Field Plug-in for SEBLOD // SEBLOD 4.x - Joomla! Ukraine</description>
+	<version>1.0.0</version>
+
 	<scriptfile>install/script.php</scriptfile>
 	
 	<files>
@@ -20,8 +21,8 @@
 	</files>
 	
 	<languages folder="languages">
-		<language tag="en-GB">en-GB/en-GB.plg_cck_field_uikiticon.ini</language>
-		<language tag="en-GB">en-GB/en-GB.plg_cck_field_uikiticon.sys.ini</language>
+		<language tag="en-GB">en-GB/plg_cck_field_uikiticon.ini</language>
+		<language tag="en-GB">en-GB/plg_cck_field_uikiticon.sys.ini</language>
 	</languages>
 	
 	<config>
