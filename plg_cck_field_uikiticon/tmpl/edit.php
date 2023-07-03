@@ -3,10 +3,10 @@
  * UIkit Icon for SEBLOD
  *
  * @package          Joomla.Site
- * @subpackage       plg_cck_field_typo_jumultithumbs
+ * @subpackage       plg_cck_field_uikiticon
  *
  * @author           Denys Nosov, denys@joomla-ua.org
- * @copyright        2016-2022 (C) Joomla! Ukraine, https://joomla-ua.org. All rights reserved.
+ * @copyright        2023 (C) Joomla! Ukraine, https://joomla-ua.org. All rights reserved.
  * @license          GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -24,7 +24,9 @@ if(@$options2[ 'sprite' ])
 	{
 		$sprite = @file_get_contents(JPATH_SITE . '/' . @$options2[ 'sprite' ]);
 		$dom    = new DOMDocument;
+
 		$dom->loadXML($sprite);
+
 		$symbols = $dom->getElementsByTagName('symbol');
 
 		$items = [];
@@ -46,7 +48,6 @@ else
 	$app->enqueueMessage(Text::_('COM_CCK_ADD_SPRITE_PATH'), 'notice');
 }
 
-// Init
 JCckDev::forceStorage();
 
 $sprite_icons = '';
