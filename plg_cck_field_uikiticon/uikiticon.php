@@ -42,7 +42,7 @@ class plgCCK_FieldUIkitIcon extends JCckPluginField
 	 * @return void
 	 * @since 1.0
 	 */
-	public function onCCK_FieldConstruct($type, array &$data = [])
+	public function onCCK_FieldConstruct($type, array &$data = []): void
 	{
 		if(self::$type !== $type)
 		{
@@ -97,7 +97,7 @@ class plgCCK_FieldUIkitIcon extends JCckPluginField
 	 * @return void
 	 * @since 1.0
 	 */
-	public function onCCK_FieldPrepareContent(&$field, string $value = '', array &$config = [])
+	public function onCCK_FieldPrepareContent(&$field, $value = '', &$config = []): void
 	{
 		if(self::$type !== $field->type)
 		{
@@ -129,7 +129,7 @@ class plgCCK_FieldUIkitIcon extends JCckPluginField
 	 * @return void
 	 * @since 1.0
 	 */
-	public function onCCK_FieldPrepareForm(&$field, string $value = '', array &$config = [], array $inherit = [], bool $return = false)
+	public function onCCK_FieldPrepareForm(&$field, $value = '', &$config = [], $inherit = [], $return = false)
 	{
 		if(self::$type !== $field->type)
 		{
@@ -166,7 +166,7 @@ class plgCCK_FieldUIkitIcon extends JCckPluginField
 	 * @return void
 	 * @since 1.0
 	 */
-	public function onCCK_FieldPrepareSearch(&$field, string $value = '', array &$config = [], array $inherit = [], bool $return = false)
+	public function onCCK_FieldPrepareSearch(&$field, $value = '', &$config = [], $inherit = [], $return = false)
 	{
 		if(self::$type !== $field->type)
 		{
@@ -191,7 +191,7 @@ class plgCCK_FieldUIkitIcon extends JCckPluginField
 	 * @return void|bool
 	 * @since 1.0
 	 */
-	public function onCCK_FieldPrepareStore($field, string $value = '', array &$config = [], array $inherit = [], bool $return = false)
+	public function onCCK_FieldPrepareStore($field, $value = '', &$config = [], $inherit = [], $return = false)
 	{
 		if(self::$type !== $field->type)
 		{
@@ -206,7 +206,7 @@ class plgCCK_FieldUIkitIcon extends JCckPluginField
 	 * @return mixed
 	 * @since 1.0
 	 */
-	public static function onCCK_FieldRenderContent($field, array &$config = [])
+	public static function onCCK_FieldRenderContent($field, &$config = [])
 	{
 		return parent::g_onCCK_FieldRenderContent($field, 'text');
 	}
@@ -218,7 +218,7 @@ class plgCCK_FieldUIkitIcon extends JCckPluginField
 	 * @return mixed
 	 * @since 1.0
 	 */
-	public static function onCCK_FieldRenderForm($field, array &$config = [])
+	public static function onCCK_FieldRenderForm($field, &$config = [])
 	{
 		return parent::g_onCCK_FieldRenderForm($field);
 	}
