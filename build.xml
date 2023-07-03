@@ -1,6 +1,6 @@
-<project name="uikiticon" default="dist" basedir=".">
+<project name="juicon" default="dist" basedir=".">
 
-    <property name="VERSION" value="1.0.1"/>
+    <property name="VERSION" value="1.0.2"/>
 
     <tstamp>
         <format property="DATE" pattern="%d.%m.%Y" />
@@ -8,7 +8,7 @@
 
     <property name="build" value="build"/>
     <property name="dist" value="dist"/>
-    <property name="filename" value="plg_cck_field_uikiticon_v${VERSION}.zip"/>
+    <property name="filename" value="plg_cck_field_juicon_v${VERSION}.zip"/>
 
     <target name="init" depends="clean">
         <mkdir dir="${build}"/>
@@ -16,7 +16,7 @@
     </target>
 
     <target name="replace">
-        <copy file="plg_cck_field_uikiticon/uikiticon.xml" todir="${build}">
+        <copy file="plg_cck_field_juicon/juicon.xml" todir="${build}">
             <filterchain>
                 <replacetokens>
                     <token key="version" value="${VERSION}" />
@@ -28,7 +28,7 @@
 
     <target name="copy">
         <copy todir="${build}">
-            <fileset dir="plg_cck_field_uikiticon">
+            <fileset dir="plg_cck_field_juicon">
                 <include name="**"/>
             </fileset>
         </copy>
