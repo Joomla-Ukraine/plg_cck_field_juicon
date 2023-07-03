@@ -1,9 +1,9 @@
-# UIkit Icon Field Plug-in for SEBLOD
+# JUIcon Field Plugin for SEBLOD
 
 The plugin displays svg icon and based on SVG Sprite.
 
 **How to use the plugin:**
-1. Select the plugin UIkit Icon
+1. Select the JUIcon Plugin
 2. Add the path to the sprite SVG file
 3. Save plugin in modal
 4. After that, additional fields will appear
